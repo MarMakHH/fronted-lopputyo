@@ -4,13 +4,13 @@ import { useState } from "react";
 export default function EditCustomer(props) {
     const [open, setOpen] = useState(false);
     const [customer, setCustomer] = useState({
-        firstname: "",
-        lastname: "",
-        streetaddress: "",
-        postcode: "",
-        city: "",
-        email: "",
-        phone: ""
+        firstname: '',
+        lastname: '',
+        streetaddress: '',
+        postcode: '',
+        city: '',
+        email: '',
+        phone: ''
     });
 
     const handleInputChange = e => {
@@ -21,13 +21,13 @@ export default function EditCustomer(props) {
         props.updateCustomer(customer, props.params);
         setOpen(false);
         setCustomer({
-            firstname: "",
-            lastname: "",
-            streetaddress: "",
-            postcode: "",
-            city: "",
-            email: "",
-            phone: ""
+            firstname: '',
+            lastname: '',
+            streetaddress: '',
+            postcode: '',
+            city: '',
+            email: '',
+            phone: ''
         });
     }
 

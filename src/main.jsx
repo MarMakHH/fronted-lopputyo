@@ -7,6 +7,8 @@ import Error from './components/Error.jsx'
 import Home from './components/home.jsx'
 import Customer from './components/customer.jsx'
 import Training from './components/training.jsx'
+import Charts from './components/Charts.jsx'
+import Calendar from './components/Calendar.jsx'
 
 const router = createHashRouter([
   {
@@ -25,6 +27,14 @@ const router = createHashRouter([
       {
         path: "training",
         element: <Training />
+      },
+      {
+        path: "calendar",
+        element: <Calendar />
+      },
+      {
+        path: "charts",
+        element: <Charts />
       }
     ]
   }

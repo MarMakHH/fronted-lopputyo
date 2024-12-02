@@ -9,6 +9,8 @@ function App() {
         <Link to={"/"}>Home</Link>
         <Link to={"/customer"}>Customers</Link>
         <Link to={"/training"}>Trainings</Link>
+        <Link to={"/calendar"}>Calendar</Link>
+        <Link to={"/charts"}>Charts</Link>
       </nav>
       <Outlet />
     </>

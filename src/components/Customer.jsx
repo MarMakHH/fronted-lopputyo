@@ -11,23 +11,23 @@ export default function Customer() {
     const [openSnackbar, setOpenSnackbar] = useState(false);
     const [msg, setMsg] = useState("");
     const [customers, setCustomers] = useState([{
-        firstname: "",
-        lastname: "",
-        streetaddress: "",
-        postcode: "",
-        city: "",
-        email: "",
-        phone: ""
+        firstname: '',
+        lastname: '',
+        streetaddress: '',
+        postcode: '',
+        city: '',
+        email: '',
+        phone: ''
     }]);
 
     const [colDefs, setColDefs] = useState([
-        { field: "firstname", filter: true, floatingFilter: true },
-        { field: "lastname", filter: true, floatingFilter: true },
-        { field: "streetaddress", filter: true, floatingFilter: true },
-        { field: "postcode", filter: true, floatingFilter: true },
-        { field: "city", filter: true, floatingFilter: true },
-        { field: "email", filter: true, floatingFilter: true },
-        { field: "phone", filter: true, floatingFilter: true },
+        { field: 'firstname', filter: true, floatingFilter: true },
+        { field: 'lastname', filter: true, floatingFilter: true },
+        { field: 'streetaddress', filter: true, floatingFilter: true },
+        { field: 'postcode', filter: true, floatingFilter: true },
+        { field: 'city', filter: true, floatingFilter: true },
+        { field: 'email', filter: true, floatingFilter: true },
+        { field: 'phone', filter: true, floatingFilter: true },
         {
             cellRenderer: (params) =>
                 <EditCustomer params={params} updateCustomer={updateCustomer} />, width: 120
@@ -143,13 +143,13 @@ export default function Customer() {
                     pagination={true}
                     suppressExcelExport={true}
                 />
+            </div>
                 <Snackbar
                     open={openSnackbar}
                     message={msg}
                     autoHideDuration={3000}
                     onClose={() => setOpenSnackbar(false)}
                 />
-            </div>
         </>
     )
 }
